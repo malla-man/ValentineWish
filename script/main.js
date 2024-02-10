@@ -1,5 +1,5 @@
 function playAudio() {
-  console.log("inside audio");
+  console.log("inside audio11");
   // Create an audio element
   var audio = new Audio('../1.mp3');
   console.log("Audio file path:", audio);
