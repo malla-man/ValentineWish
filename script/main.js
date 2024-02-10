@@ -1,19 +1,19 @@
 function playAudio() {
   console.log("inside audio");
   // Create an audio element
-  var audio = new Audio('../1.mp3');
+  // var audio = new Audio('../1.mp3');
 
   // Ensure the audio is loaded before playing
-  audio.addEventListener('loadedmetadata', function() {
+  // audio.addEventListener('loadedmetadata', function() {
     // Play the audio
-    audio.play();
-});
+    // audio.play();
+  // });
   
   // Add event listener to replay the audio when it ends
-  audio.addEventListener('ended', function() {
-      this.currentTime = 0; // Reset audio to the beginning
-      this.play(); // Replay audio
-  });
+  // audio.addEventListener('ended', function() {
+  //     this.currentTime = 0; // Reset audio to the beginning
+  //     this.play(); // Replay audio
+  // });
 }
 
 // Animation Timeline
