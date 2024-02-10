@@ -7,7 +7,7 @@ function playAudio() {
   // // Ensure the audio is loaded before playing
   // audio.addEventListener('loadedmetadata', function() {
     // Play the audio
-    console.log("Audio file path:";
+    console.log("Audio file path:");
     audio.play();
   // });
   
