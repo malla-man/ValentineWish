@@ -4,17 +4,17 @@ function playAudio() {
   var audio = new Audio('../1.mp3');
   console.log("Audio file path:", audio);
 
-  // Ensure the audio is loaded before playing
-  audio.addEventListener('loadedmetadata', function() {
-    // Play the audio
-    audio.play();
-  });
+  // // Ensure the audio is loaded before playing
+  // audio.addEventListener('loadedmetadata', function() {
+  //   // Play the audio
+  //   audio.play();
+  // });
   
-  // Add event listener to replay the audio when it ends
-  audio.addEventListener('ended', function() {
-      this.currentTime = 0; // Reset audio to the beginning
-      this.play(); // Replay audio
-  });
+  // // Add event listener to replay the audio when it ends
+  // audio.addEventListener('ended', function() {
+  //     this.currentTime = 0; // Reset audio to the beginning
+  //     this.play(); // Replay audio
+  // });
 }
 
 // Animation Timeline
