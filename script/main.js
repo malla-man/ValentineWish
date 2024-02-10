@@ -2,11 +2,12 @@ function playAudio() {
   console.log("inside audio11");
   // Create an audio element
   var audio = new Audio('../1.mp3');
-  console.log("Audio file path:", audio);
+  
 
   // // Ensure the audio is loaded before playing
   audio.addEventListener('loadedmetadata', function() {
     // Play the audio
+    console.log("Audio file path:";
     audio.play();
   });
   
