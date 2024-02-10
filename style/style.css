@@ -5,6 +5,10 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background-image: url('../img/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -57,6 +61,10 @@ body {
   font-size: 3rem;
 }
 
+.three p {
+  color: red;
+}
+
 .four .text-box {
   width: 600px;
   margin: 0 auto;
@@ -80,7 +88,7 @@ body {
   right: 5px;
   bottom: 5px;
   color: #fff;
-  background-color: rgb(21, 161, 237);
+  background-color: red;
   padding: 5px 8px;
   border-radius: 3px;
 }

@@ -1,3 +1,20 @@
+function playAudio() {
+  // Create an audio element
+  var audio = new Audio('../1.mp3');
+
+  // Ensure the audio is loaded before playing
+  audio.addEventListener('loadedmetadata', function() {
+    // Play the audio
+    audio.play();
+});
+  
+  // Add event listener to replay the audio when it ends
+  audio.addEventListener('ended', function() {
+      this.currentTime = 0; // Reset audio to the beginning
+      this.play(); // Replay audio
+  });
+}
+
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
@@ -88,7 +105,7 @@ const animationTimeline = () => {
       0.05
     )
     .to(".fake-btn", 0.1, {
-      backgroundColor: "rgb(127, 206, 248)",
+      backgroundColor: "pink",
     })
     .to(
       ".four",
@@ -108,7 +125,7 @@ const animationTimeline = () => {
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
       x: 10,
-      backgroundColor: "rgb(21, 161, 237)",
+      backgroundColor: "red",
       color: "#fff",
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
@@ -142,6 +159,7 @@ const animationTimeline = () => {
       {
         scale: 0.2,
         opacity: 0,
+        
       },
       "+=2"
     )
@@ -164,9 +182,10 @@ const animationTimeline = () => {
         opacity: 0,
         rotation: -15,
         ease: Expo.easeOut,
+        onComplete: playAudio,
       },
-      0.2,
-      "+=1"
+      0,
+      "+=0"
     )
     .staggerFromTo(
       ".baloons img",
@@ -191,7 +210,7 @@ const animationTimeline = () => {
         y: -25,
         rotationZ: -45,
       },
-      "-=2"
+      "-=1"
     )
     .from(".hat", 0.5, {
       x: -100,
