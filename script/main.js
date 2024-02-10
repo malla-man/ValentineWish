@@ -5,7 +5,7 @@ function playAudio() {
 
   // Ensure the audio is loaded before playing
   audio.addEventListener('loadedmetadata', function() {
-    Play the audio
+    // Play the audio
     audio.play();
   });
   
