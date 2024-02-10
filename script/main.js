@@ -5,11 +5,11 @@ function playAudio() {
   
 
   // // Ensure the audio is loaded before playing
-  audio.addEventListener('loadedmetadata', function() {
+  // audio.addEventListener('loadedmetadata', function() {
     // Play the audio
     console.log("Audio file path:";
     audio.play();
-  });
+  // });
   
   // // Add event listener to replay the audio when it ends
   // audio.addEventListener('ended', function() {
